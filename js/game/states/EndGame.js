@@ -9,7 +9,7 @@ Lyra.EndGame = function() {
 	this.primaryCard = $("#primary-card");
 	this.storyCard = $("<div id='story-card'></div>")
 	this.storyTextCard = $("<p></p>");
-	this.storyNextCard = $("<img id='story-next-card' src='/lyra/assets/images/next_arrow.png'>");
+	this.storyNextCard = $("<img id='story-next-card' src='../../assets/images/next_arrow.png'>");
 };
 
 Lyra.EndGame.prototype = {
