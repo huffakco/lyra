@@ -1,0 +1,475 @@
+body {
+    background-image: url("/assets/images/space.jpeg");
+    background-size: cover;
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Raleway', sans-serif;
+}
+
+/******************************************************************************
+ * GENERAL CARD SIZE AND POSITION
+ *****************************************************************************/
+#interface {
+    margin: 150px auto;
+    display: block;
+    width: 1184px;
+    height: 832px;
+    position: relative;
+}
+
+#primary-card {
+    height: 640px;
+    border-radius: 5px 5px 0px 0px;
+    position: relative;
+}
+
+#communicator-card {
+    height: 192px;
+}
+
+/*******************************************************************************
+ * LOGIN MENU
+ ******************************************************************************/
+#status-messages {
+    margin-top: 25px;
+    min-height: 50px;
+}
+
+#status-message {
+    
+}
+
+.status-alert {
+    color: yellow;
+    font-size: 2.1em;
+    font-weight: bold;
+}
+
+.status-settle {
+    color: white;
+    font-size: 2em;
+    transition: .5s;
+}
+
+#menu-title {
+    font-size: 10em;
+    color: white;
+    font-family: 'Bahiana', cursive;
+    letter-spacing: 10px;
+}
+
+#login-title,
+#add-user-title {
+    font-size: 4em;
+    color: white;
+}
+
+#language-selection {
+    width: 100%;
+}
+
+#form-card {
+    margin: auto;
+    padding: 25px;
+    border-radius: 3px;
+    text-align: center;
+    width: 480px;
+    background: rgba(0,0,0,.6);
+}
+
+
+#form-card input,
+#form-card select {
+    color: white;
+    background: rgba(62, 116, 183, .5);
+    min-height: 50px;
+    height: 50px;
+    border: 3px solid rgba(0, 0, 0, .3);
+    border-radius: 5px;
+}
+
+#form-card label {
+    font-size: 2em;
+    color: white;
+}
+
+::-webkit-input-placeholder {
+   color: white;
+}
+
+#form-card input,
+#form-card select,
+#submit-button,
+#add-user-button,
+#create-user-link {
+    width: 75%;
+    margin: auto;
+}
+
+#submit-button,
+#add-user-button,
+#create-user-link {
+    margin-top: 25px;
+    background: rgba(238, 235, 217, 1.0);
+    color: black;
+    font-size: 1.4em;
+    height: 45px;
+}
+
+#submit-button:hover,
+#add-user-button:hover,
+#create-user-link:hover {
+    color: rgba(238, 235, 217, 1.0);
+    background: rgba(62, 116, 183, .7);
+    border: 2px solid rgba(238, 235, 217, 1.0);
+}
+
+a {
+    color: inherit;
+}
+
+a: visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+    color: inherit;
+}
+
+label {
+    color: white;
+}
+
+/*******************************************************************************
+ * GAME - MENU OVERLAY
+ ******************************************************************************/
+#menu-overlay button {
+    min-width: 200px;
+    width: 50%;
+    max-width: 450px;
+    background-color: rgba(0, 0, 0, .6);
+    color: white;
+    margin-bottom: 9px;
+    font-size: 1.5em;
+    border: none;
+}
+
+#menu-overlay button:hover {
+    background-color: rgba(200, 200, 200, .9);
+    color: black;
+}
+
+#menu-overlay button:focus {
+    outline: 0;
+}
+
+#menu-overlay ul {
+    padding: 0px;
+}
+
+/*******************************************************************************
+ * GAME - MAIN MENU
+ ******************************************************************************/
+#main-menu-card {
+    display: none;
+	width: 90%;
+	height: 90%;
+	position: absolute;
+	top: 10%;
+	left: 10%;
+	color: white;
+	font-size: 2em;
+}
+
+#main-menu-card button {
+    background-color: rgba(0, 0, 0, .6);
+    min-width: 250px;
+    border: none;
+    margin-bottom: 25px;
+    transition: 0.5s;
+}
+
+#main-menu-card button:hover {
+    background-color: rgba(255, 255, 255, .4);
+}
+
+#main-menu-card button:focus {
+    outline: 0;
+}
+
+#load-game-left-arrow::before {
+    width: 250px;
+}
+
+#load-game-left-arrow,
+#load-game-right-arrow {
+    display: inline-block;
+    background-color: rgba(255, 255, 255, .6);
+    color: rgb(0, 0, 0);
+    width: 45%;
+    margin: 0px auto;
+    text-align: center;
+    text-decoration: none;
+}
+
+#load-game-left-arrow:hover,
+#load-game-right-arrow:hover {
+    background-color: rgb(0, 0, 0);
+    color: rgba(255, 255, 255, .6);
+    transition: 1s;
+}
+
+#load-game-left-arrow {
+    float: left;
+}
+
+#load-game-right-arrow {
+    float: right;
+}
+
+.inactive-button {
+    color: grey;
+    background-color: grey;
+}
+
+/*******************************************************************************
+ * GAME - STORY CARD
+ ******************************************************************************/
+ #story-card {
+    background-color: rgba(0,0,0,.6);
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+#story-card p {
+    color: white;
+    font-size: 4em;
+    margin: 15px 0px 0px 15px;
+}
+
+#story-next-card {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 75%;
+    left: 85%;
+}
+ 
+
+/*******************************************************************************
+ * GAME - COMMUNICATOR CARD
+ ******************************************************************************/
+#communicator-card {
+    background-image: url("/assets/images/comm-background.gif");
+    background-size: contain;
+    background-color: rgba(0, 0, 0, .6);
+    color: white;
+    padding-top: 10px;
+}
+
+#communicator-card h4 {
+    text-align: center;
+}
+
+#communicator-card h5 {
+    text-align: center;
+}
+
+/* SECTION - PLAYER SELECTOR */
+#player-selector {
+    padding-left: 50px;
+    height: 176px;
+}
+
+.player-selector-player {
+    margin: 10px auto;
+    width: 80%;
+    height: 64px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.player-selector-active-player {
+    border: 1px solid yellow;
+    cursor: default;
+}
+
+.player-selector-inactive-player {
+    border: none;
+    cursor: pointer;
+    cursor: hand;
+}
+
+#p1 {
+    background-image: url("/assets/images/player-red.png");
+}
+
+#p2 {
+    background-image: url("/assets/images/player-green.png");
+}
+
+#p3 {
+    background-image: url("/assets/images/player-blue.png");
+}
+
+/* SECTION - INVENTORY MANAGER */
+.player-inventory-slot,
+.container-inventory-slot {
+    height: 50px;
+    width: 50px;
+}
+
+#player-inventory,
+#player-equipped {
+    height: 176px;
+}
+
+#player-inventory-row-1,
+#container-inventory-row-1 {
+    margin-bottom: 15px;
+}
+
+#player-inventory-slot-e-option-1,
+#player-inventory-slot-e-option-2 {
+    margin-left: 15px;
+    margin-bottom: 3px;
+    text-align: center;
+}
+
+#player-inventory-slot-e {
+    height: 50px;
+    width: 50px;
+    margin: auto;
+}
+
+/* all inventory slots */
+.active-slot {
+    border: 2px solid #4e9a06;
+    background-color: #97df52;
+}
+
+.inactive-slot {
+    border: 2px solid #898989;
+    background-color: #c6c6c6;
+}
+
+/* styling for player option buttons */
+.player-inventory-option {
+    margin-bottom: 3px;
+}
+
+#player-inventory-slot-e-option-1 {
+    height: 25px;
+    width: 50px;
+    margin-left: 50px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+/* styling for player equip option buttons */
+.player-inventory-option-equip {
+    height: 25px;
+    width: 50px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-bottom: 3px;
+}
+
+.player-equip-active {
+    background-image: url("/assets/images/equip_green.png");
+    cursor: pointer;
+    cursor: hand;
+}
+
+.player-equip-active:hover {
+    background-image: url("/assets/images/equip_green_active.png");
+}
+
+.player-equip-inactive {
+    background-image: url("/assets/images/equip_grey.png");
+    cursor: default;
+}
+
+/* styling for player transfer option buttons */
+.player-inventory-option-transfer {
+    height: 20px;
+    width: 50px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.player-transfer-active {
+    background-image: url("/assets/images/right_green_arrow.png");
+    cursor: pointer;
+    cursor: hand;
+}
+
+.player-transfer-active:hover {
+    background-image: url("/assets/images/right_green_arrow_active.png");
+}
+
+.player-transfer-inactive {
+    background-image: url("/assets/images/right_grey_arrow.png");
+    cursor: default;
+}
+
+/* styling for container transfer option buttons */
+.container-inventory-option-transfer {
+    height: 20px;
+    width: 50px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.transfer-active {
+    background-image: url("/assets/images/left_green_arrow.png");
+    cursor: pointer;
+    cursor: hand;
+}
+
+.transfer-active:hover {
+    background-image: url("/assets/images/left_green_arrow_active.png");
+}
+
+.transfer-inactive {
+    background-image: url("/assets/images/left_grey_arrow.png");
+    cursor: default;
+}
+
+/* SECTION - GAME TIMER */
+#timer {
+    padding-right: 50px;
+}
+
+#timer p {
+    font-size: 1.5em;
+    text-align: center;
+}
+
+#timer-bar {
+    background: rgb(0, 255, 0);
+    width: 90%;
+    height: 25px;
+    margin-left: 5%;
+    transition: background-color 1s linear;
+    transition: width 1s linear;
+}
+
+#timer img {
+    width: 95%;
+    margin: auto;
+    display: block;
+}
+
+.disabled-option {
+    display: none;
+}

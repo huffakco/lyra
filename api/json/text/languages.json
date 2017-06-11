@@ -1,0 +1,332 @@
+{
+    "language" : ["English", "Pirate", "Español"],
+    "languageCodes" : ["ENG", "PRT", "ESP"],
+    "languageWord" : {
+        "ENG" : "Language",
+        "PRT" : "Ye Tongue",
+        "ESP" : "Idioma"
+    },
+    "createAccount" : {
+        "ENG" : "Create Account",
+        "PRT" : "Make yer Mark!",
+        "ESP" : "Crear Una Cuenta"
+    },
+    "identifyYourself" : {
+        "ENG" : "Identify Yourself",
+        "PRT" : "Who be ye?",
+        "ESP" : "Identifícate"
+    },
+    "username" : {
+        "ENG" : "Username",
+        "PRT" : "Arrrrr! What is ye name?",
+        "ESP" : "Nombre de usuario"
+    },
+    "password" : {
+        "ENG" : "Password",
+        "PRT" : "Arrrr! What be the code?",
+        "ESP" : "Contraseña"
+    },
+    "submit" : {
+        "ENG" : "Enter",
+        "PRT" : "Board ye Vessel!",
+        "ESP" : "Entrar"
+    },
+    "login" : {
+        "ENG" : "Login",
+        "PRT" : "Login",
+        "ESP" : "Iniciar Sesión"
+    },
+    "invalidlogin" : {
+        "ENG" : "Invalid login, please ensure the username and password are correct.",
+        "PRT" : "Fool! Ye don' know yer name or the code.",
+        "ESP" : "Invalid login, asegúrese de que el nombre de usuario y la contraseña son correctos."
+    },
+    "usercreated" : {
+        "ENG" : "User created successfully!",
+        "PRT" : "Ye may pass",
+        "ESP" : "Usuario creado correctamente."
+    },
+    "userexists" : {
+        "ENG" : "That username already exists! Try again.",
+        "PRT" : "Tha' name be known, choose another",
+        "ESP" : "Ese nombre de usuario ya existe! Inténtalo de nuevo."
+    },
+    "backToLogin" : {
+        "ENG" : "Back to Login",
+        "PRT" : "Go back!",
+        "ESP" : "Atrás para iniciar sesión"
+    },
+    "story" : {
+        "ENG" : "Story",
+        "PRT" : "Lyra's Tale",
+        "ESP" : "Historia"
+    },
+    "sound" : {
+        "ENG" : "Sound",
+        "PRT" : "Ye Noise",
+        "ESP" : "Sonar"
+    },
+    "true" : {
+        "ENG" : "True",
+        "PRT" : "Bold!",
+        "ESP" : "Cierto"
+    },
+    "false" : {
+        "ENG" : "False",
+        "PRT" : "Lies!",
+        "ESP" : "Falso"
+    },
+    "mainmenu" : {"ENG" : "Main Menu", "PRT": "Ships Manifest", "ESP": "Menú principal"},
+    "newgame" : {"ENG" : "New Game", "PRT": "First voyage", "ESP": "Nuevo juego"},
+    "loadgame" : {"ENG" : "Load Game", "PRT": "Underway", "ESP": "Cargar juego"},
+    "options" : {"ENG" : "Options", "PRT": "Choose, matey!", "ESP": "Opciones"},
+    "easymap" : {"ENG" : "Easy Map", "PRT": "Lily livered", "ESP": "Mapa facil"},
+    "hardmap" : {"ENG" : "Hard Map", "PRT": "Old salt", "ESP": "Mapa duro"},
+    "music" : {"ENG" : "Music", "PRT": "Yo ho ho", "ESP": "Musica"},
+    "save" : {"ENG" : "Save", "PRT": "Stow it!", "ESP": "Guardar"},
+    "togglesound" : {"ENG" : "Toggle Sound", "PRT": "Ye Music or Not?", "ESP": "Alternar Sonido"},
+    "returntomainmenu" : {"ENG": "Return to Main Menu", "PRT": "Run and Hide?!", "ESP": "Volver al Menú Principal"},
+    
+    "intro0" : {"ENG" : "Many believe the sound of the Golden Lyre brings peace and prosperity. After a successful mission retrieving the artifact, the Lyra ship and its crew make their journey back home.", 
+            "PRT": "Many believe th' sound 'o th' Golden Lyre brin's peace 'n prosperity. After a successful mission retrievin' th' artifact, th' Lyra ship 'n its crew make their journey back home.",
+            "ESP": "Muchos creen que el sonido de la paz y la prosperidad de Golden Lyre. Después de una misión exitosa recuperando el artefacto, el barco de Lyra y su tripulación regresan a su hogar." },
+    
+    "intro1" : {"ENG": "Unfortunately, pirates in pursuit of the artifact, have tracked the ship and irrecoverably damaged it in the process. However, the Golden Lyre remains safely hidden onboard.", 
+        "PRT": "Unfortunately, band 'o pirates in pursuit 'o th' artifact, have tracked th' ship 'n irrecoverably damaged it in th' process. However, th' Golden Lyre remains safely hidden onboard.", 
+        "ESP": "Desafortunadamente, los piratas en la búsqueda del artefacto, han rastreado el barco y Irreversiblemente dañado en el proceso. Sin embargo, la Lira Dorada permanece oculta a bordo. "},  
+    
+    "intro2" : {"ENG" : "They have boarded the ship from the docking bay. Don't let the pirates leave with the Golden Lyre!", 
+        "PRT": "Band 'o pirates have boarded th' ship from th' dockin' bay. Do not let them escape wit' th' Golden Lyre", 
+        "ESP": "Los piratas de la banda han subido al barco desde la bahía. No dejes que escapen con el 'th' Golden Lyre."},
+    
+    "intro3" : {"ENG": "The crew is in sleep pods and unaware of the situation.  Escape pods must be repaired from equipment located in containers onboard.", 
+        "PRT": "Ahoy! Thee mateys be sleepin' and unaware of thee trials. Escape pods must be repaired from equipment located in containers onboard.", 
+        "ESP": "La tripulación está en vainas del sueño y no está enterada de la situación. Las vainas de escape deben ser reparadas de los equipos ubicados en contenedores a bordo."},
+    
+
+    
+    "intro4" : {"ENG" : "Sticky slime has been released onboard.  Contact will cause crew to become immobilized. Slime suppressant cans are located throughout the ship. Spray on slime to neutralize it.", 
+        "PRT": "Well shave me belly with a rusty razor! Sticky slime has been released onboard. Contact will cause ye mateys to become immobilized. Slime suppressant cans be stowed throughout thee galleon. Spray on slime to swab it.", 
+        "ESP": "Sticky limo ha sido lanzado a bordo. El contacto causará que la tripulación se inmovilice. Las latas supresoras de limo se encuentran en todo el buque. Rocíe el limo para neutralizarlo."},
+
+    "credits" : {"ENG" : "Credits:<br/><h3>Phaser.io source code is available at: https://github.com/photonstorm/phaser/tree/v2.6.2 (MIT license),<br/>http://opengameart.org/content/sci-fi-interior-tiles (Buch: http://blog-buch.rhcloud.com)<br/>https://github.com/twbs/bootstrap (MIT License)<br/>https://github.com/jquery/jquery (Copyright JS Foundation and other contributors, https://js.foundation/)<br/>https://github.com/prettymuchbryce/easystarjs (MIT License)<br/>http://soundation.com<br/>http://www.freesound.org/</h3>", 
+        "PRT": "Mates:<br/><h3>Phaser.io source code is available at: https://github.com/photonstorm/phaser/tree/v2.6.2 (MIT license),<br/>http://opengameart.org/content/sci-fi-interior-tiles (Buch: http://blog-buch.rhcloud.com)<br/>https://github.com/twbs/bootstrap (MIT License)<br/>https://github.com/jquery/jquery (Copyright JS Foundation and other contributors, https://js.foundation/)<br/>https://github.com/prettymuchbryce/easystarjs (MIT License)</h3>", 
+        "ESP": "Créditos:<br/><h3>Phaser.io source code is available at: https://github.com/photonstorm/phaser/tree/v2.6.2 (MIT license),<br/>http://opengameart.org/content/sci-fi-interior-tiles (Buch: http://blog-buch.rhcloud.com)<br/>https://github.com/twbs/bootstrap (MIT License)<br/>https://github.com/jquery/jquery (Copyright JS Foundation and other contributors, https://js.foundation/)<br/>https://github.com/prettymuchbryce/easystarjs (MIT License)</h3>"},
+    
+    "authors" : {"ENG" : "Created by:<br/><ul><li>Mark Giles</li><li>Corinna Huffaker</li><li>Runa Trinh</li></ul>", 
+        "PRT": "Yarn spinners:<br/><ul><li>Mark Giles</li><li>Corinna Huffaker</li><li>Runa Trinh</li></ul>", 
+        "ESP": "Creado por:<br/><ul><li>Mark Giles</li><li>Corinna Huffaker</li><li>Runa Trinh</li></ul>"},
+
+    
+    "intro5" : {"ENG" : "Escape with the lyre and the crew to save the Lyra mission!", 
+        "PRT": "Ahoy ye lubber! Escape with thee lyre and thee crew to save thee Lyra mission!", 
+        "ESP": "¡Escape con la lira y la tripulación para salvar la misión de Lyra!"},
+    
+    "text1" : {"ENG" : "Commander, commander! Wake up crew and proceed to escape pods immediately, oxygen levels are falling!", 
+            "PRT": "Ahoy Captain, captain! Wake the mates and abandon ship! We be in grave danger ya lubber!", 
+            "ESP": "¡Comandante, comandante! ¡Despierta el equipo y procede a escapar de las vainas inmediatamente, los niveles de oxígeno están cayendo!"},
+    
+    "text2" : {"ENG" : "The ship has taken heavy damage from asteroids and pirates.  Slime spore detected.", 
+            "PRT": "Fool! Thee galleon has taken heavy damage from asteroids and pirates. Slime spore detected.", 
+            "ESP": "La nave ha recibido grandes daños de asteroides y piratas. Se detectó una espora de limo."},
+    
+    "text3" : {"ENG" : "Find equipment to repair escape pods in containers onboard the ship.  Use suppressant to stop the slime.", 
+            "PRT": "Undertake repairs of the galleon. Ye be needin pieces and parts stowed in the ships holds.  Use suppressant to stop the slime, fool!", 
+            "ESP": "Encontrar equipos para reparar las vainas de escape en contenedores a bordo del buque. Utilice un supresor para detener el limo."},
+    
+    "text4" : {"ENG" : "Watch out for pirates!  Pirates carry stun guns that will knock you out.", 
+            "PRT": "Watch ou' fer scallywags! Scallywags carry stun cannons that will knock ye ou'.", 
+            "ESP": "Cuidado con los piratas! Los piratas llevan armas de aturdimiento que te golpearán hacia fuera."},
+    
+    "text5" : {"ENG" : "The ships precious cargo, the golden lyre is hidden on board.  Save it along with the crew to complete your mission!", 
+            "PRT": "Arrr! Thee ships precious cargo, thee golden lyre is hidden on board. Save it along with thee crew to complete yer mission!", 
+            "ESP": "Los buques de carga preciosa, la lira de oro se oculta a bordo. ¡Guárdelo junto con la tripulación para completar su misión!"},
+            
+    "controls" : {"ENG" : "Controls:<br/><h2><ul><li>w : up</li><li>a : left</li><li>s : down</li><li>d : right</li><li>e : toggle open or closed</li><li>z : save</li><li>mouse click on map : set destination for selected crew</li><li>spacebar: spray equipped item</li><li>ESC or m: View options menu</li><li>Close escape pod to check game end conditions</li></ul></h2> ",
+        "PRT": "Man the helm:<br/><h2><ul><li>w : skyward</li><li>a : port</li><li>s : below</li><li>d : starboard</li><li>e : breached or hatch secured</li><li>z : stow</li><li>mouse click on map : Mark the black spot and go on the account</li><li>spacebar: slosh ye' swabber</li><li>ESC or m: Yer choices</li><li>Close escape pod an' victory be yours</li></ul></h2> ",
+        "ESP": "Controles: <br/><h2><ul><li>w : arriba</li><li>a : izquierda</li><li>s : abajo</li><li>d : derecha</li><li>e :  activar o desactivar</li><li>z : guardar</li><li>el ratón sobre el mapa: establecer el destino de la tripulación seleccionada</li><li>Barra espaciadora: artículo equipado con spray</li><li>ESC or m: Menú de opciones de visualización</li><li>Cerrar el pod de escape para verificar las condiciones finales del juego</li></ul></h2> "
+    },
+    "outofcapacity" : {"ENG" : "Equipped item no longer working!",
+        "PRT": "Yer' swabber is done fer!",
+        "ESP": "¡El artículo equipado ya no funciona!"
+    },
+    "repair" : { 
+        "ENG" : "Repair items:",
+        "PRT": "Wha' ye' be needin'",
+        "ESP": "Artículos de reparación:"
+    },
+    "circuit" : {
+        "ENG" : "circuit",
+        "PRT": "gizmo",
+        "ESP": "circuito"
+    },
+    "fuel_tank" : {
+        "ENG" : "fuel tank",
+        "PRT": "grog",
+        "ESP": "depósito de combustible"
+    },
+    "duct_tape":{
+        "ENG":"duct tape",
+        "PRT":"duct tape",
+        "ESP":"cinta adhesiva"
+    },
+    "fuse" : {
+        "ENG" : "fuse",
+        "PRT": "gadget",
+        "ESP": "fusible"
+    },
+    "torch" : {
+        "ENG" : "torch",
+        "PRT": "torch",
+        "ESP": "antorcha"
+    },
+    "suppresant" : {
+        "ENG" : "slime suppressant",
+        "PRT": "slime swabber'",
+        "ESP": "supresor de limo"
+    },
+    "wrench" : {
+        "ENG" : "wrench",
+        "PRT": "hook",
+        "ESP": "llave inglesa"
+    },
+    "monitor" : {
+        "ENG" : "monitor",
+        "PRT": "talkin' mirror'",
+        "ESP": "monitor"
+    },
+    "wires" : {
+        "ENG" : "wires",
+        "PRT": "wires",
+        "ESP": "cables"
+    },
+    "blaster" : {
+        "ENG" : "blaster",
+        "PRT": "bazooka",
+        "ESP": "blaster" 
+    },
+    "lyre" : {
+        "ENG" : "golden lyre",
+        "PRT": "goldn' lyre",
+        "ESP": "lira dorada"
+    },
+    "coffeecup" : {
+        "ENG" : "latte",
+        "PRT": "mornin' grog",
+        "ESP": "latté"
+    },
+    "redshat" : {
+        "ENG" : "Reds hat",
+        "PRT": "Yer red hat",
+        "ESP": "Rojos sombrero"
+    },
+    "commandcenter" : {
+        "ENG" : "Command Center",
+        "PRT": "Captn's Quarters",
+        "ESP": "Centro de comando"
+    },
+    "dock" : {
+        "ENG" : "Docking bay",
+        "PRT": "Dock",
+        "ESP": "Muelle de acoplamiento"
+    },
+    "escapepod" : {
+        "ENG" : "Escape pod",
+        "PRT": "Long boats",
+        "ESP": "Vaina de escape"
+    },
+    "passage" : {
+        "ENG" : "Passage way",
+        "PRT": "Passin' way",
+        "ESP": "Camino de paso"
+    },
+    "mainhall" : {
+        "ENG" : "Main Hall",
+        "PRT": "Gangway",
+        "ESP": "Sala principal"
+    },
+    "med_bay" : {
+        "ENG" : "Medical Bay",
+        "PRT": "Sick bay",
+        "ESP": "Bahía médica"
+    },
+    "cafeteria" : {
+        "ENG" : "Cafeteria",
+        "PRT": "Chow Hall",
+        "ESP": "Cafetería"
+    },
+    "crew_quarters" : {
+        "ENG" : "Crew Quarters",
+        "PRT": "Crew cabin'",
+        "ESP": "Cuartos de la tripulación"
+    },
+    "rec_room" : {
+        "ENG" : "Recreation Room",
+        "PRT": "Recreatin' cabin",
+        "ESP": "Salón de recreo"
+    },
+    "engine_room" : {
+        "ENG" : "Engine Room",
+        "PRT": "Engin' n' Machinery",
+        "ESP": "Sala de máquinas"
+    },
+    "workshop" : {
+        "ENG" : "Workshop",
+        "PRT": "Shipwrigth n' Carpentry",
+        "ESP": "Taller"
+    },
+    "oxygenfalling" : {"ENG" : "Oxygen levels are falling! Five minutes remain.", 
+        "PRT": "Yarr! Oxygen levels be critical. Five minutes remain.",
+        "ESP": "¡Los niveles de oxígeno están cayendo! Quedan cinco minutos."},
+    
+    "oxygencritical" : {"ENG" : "Oxygen levels are critical!  One minute remains.", 
+            "PRT": "Yarr! Oxygen levels be critical. One minute remains.", 
+            "ESP": "¡Los niveles de oxígeno están cayendo! Queda uno minuto."},
+    
+    "victory" : {"ENG" : "Victory!", "PRT": "Shiver me timbers! Victory!", "ESP": "Victoria"},
+    
+    "totalfailure" : {"ENG" : "Mission Failure!", 
+        "PRT": "Lubbers!  We're sunk!", 
+        "ESP": "Fracaso de la misión."},
+    
+    "partialfaillyre" : {"ENG" : "Mission Failure! Lyre is lost!", 
+        "PRT": "Alas! Mission Failure! Lyre be lost!", 
+        "ESP": "¡Fracaso de misión! ¡Lyre se ha perdido!"},
+    
+    "partialfailcrew" : {"ENG" : "Mission Failure! Crew are lost!", 
+        "PRT": "Dead men tell no tales! Crew be lost!", 
+        "ESP": "¡Fracaso de misión! ¡La tripulación está perdida!"},
+        
+    "timeout" : {"ENG" : "Crew asphyxiation! All are lost!", 
+        "PRT": "Davey Jones be welcomin' ye Crew!", 
+        "ESP": "¡Asfixia de la tripulación! ¡Todos están perdidos!"},    
+        
+    "banditshavelyre" : {"ENG" : "Pirates have made off with the Lyre! Peace and harmony no longer possible!", 
+        "PRT": "Yarrrr Pirates ha' takin the Lyre fer buillion!", 
+        "ESP": "¡Los piratas han salido con la Lyre! ¡Paz y armonía ya no son posibles!"},
+        
+    "playercontrol" : {"ENG" : "Player Control", 
+        "PRT": "Ye helm", 
+        "ESP":  "Control del reproductor"},
+        
+    "playerinventory":{"ENG" : "Player Inventory", 
+        "PRT": "Ye belt", 
+        "ESP":  "Inventario del reproductor"}, 
+    
+    "equipped" :{"ENG" : "Equipped", 
+        "PRT": "Ye tool", 
+        "ESP":  "Equipado"},
+    
+    "containerinventory" :{"ENG" : "Container Inventory", 
+        "PRT": "Tools in ye locker", 
+        "ESP":  "Inventario de contenedores"},
+    
+    "oxygen" :{"ENG" : "Oxygen", 
+        "PRT": "Air ye be breathin'", 
+        "ESP":  "Oxígeno"},
+    
+    "template" : {"ENG" : "English", 
+        "PRT": "Pirate", 
+        "ESP":  "Español"}
+    
+}
