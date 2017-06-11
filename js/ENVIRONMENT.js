@@ -1,1 +1,1 @@
-var apiUrl = 'https://huffakco.github.io/lyra/api/';
+var apiUrl = 'https://huffakco.github.io/lyra/';
