@@ -1,5 +1,5 @@
 body {
-    background-image: url("lyra/assets/images/space.jpeg");
+    background-image: url("../../assets/images/space.jpeg");
     background-size: cover;
     padding: 0px;
     margin: 0px;
@@ -264,7 +264,7 @@ label {
  * GAME - COMMUNICATOR CARD
  ******************************************************************************/
 #communicator-card {
-    background-image: url("/assets/images/comm-background.gif");
+    background-image: url("../../assets/images/comm-background.gif");
     background-size: contain;
     background-color: rgba(0, 0, 0, .6);
     color: white;
@@ -310,15 +310,15 @@ label {
 }
 
 #p1 {
-    background-image: url("/assets/images/player-red.png");
+    background-image: url("../../assets/images/player-red.png");
 }
 
 #p2 {
-    background-image: url("/assets/images/player-green.png");
+    background-image: url("../../assets/images/player-green.png");
 }
 
 #p3 {
-    background-image: url("/assets/images/player-blue.png");
+    background-image: url("../../assets/images/player-blue.png");
 }
 
 /* SECTION - INVENTORY MANAGER */
@@ -385,17 +385,17 @@ label {
 }
 
 .player-equip-active {
-    background-image: url("/assets/images/equip_green.png");
+    background-image: url("../../assets/images/equip_green.png");
     cursor: pointer;
     cursor: hand;
 }
 
 .player-equip-active:hover {
-    background-image: url("/assets/images/equip_green_active.png");
+    background-image: url("../../assets/images/equip_green_active.png");
 }
 
 .player-equip-inactive {
-    background-image: url("/assets/images/equip_grey.png");
+    background-image: url("../../assets/images/equip_grey.png");
     cursor: default;
 }
 
@@ -408,17 +408,17 @@ label {
 }
 
 .player-transfer-active {
-    background-image: url("/assets/images/right_green_arrow.png");
+    background-image: url("../../assets/images/right_green_arrow.png");
     cursor: pointer;
     cursor: hand;
 }
 
 .player-transfer-active:hover {
-    background-image: url("/assets/images/right_green_arrow_active.png");
+    background-image: url("../../assets/images/right_green_arrow_active.png");
 }
 
 .player-transfer-inactive {
-    background-image: url("/assets/images/right_grey_arrow.png");
+    background-image: url("../../assets/images/right_grey_arrow.png");
     cursor: default;
 }
 
@@ -431,17 +431,17 @@ label {
 }
 
 .transfer-active {
-    background-image: url("/assets/images/left_green_arrow.png");
+    background-image: url("../../assets/images/left_green_arrow.png");
     cursor: pointer;
     cursor: hand;
 }
 
 .transfer-active:hover {
-    background-image: url("/assets/images/left_green_arrow_active.png");
+    background-image: url("../../assets/images/left_green_arrow_active.png");
 }
 
 .transfer-inactive {
-    background-image: url("/assets/images/left_grey_arrow.png");
+    background-image: url("../../assets/images/left_grey_arrow.png");
     cursor: default;
 }
 
