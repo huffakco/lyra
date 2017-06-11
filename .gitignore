@@ -1,3 +1,5 @@
 api/gameSave.json
 api/json/SavedGames/*
 api/json/UserPreferences/*
+js/game/flowers/*
+js/flowers.js
