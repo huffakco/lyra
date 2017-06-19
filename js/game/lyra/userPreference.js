@@ -38,23 +38,24 @@ class UserPreference {
     }
 
     update() {
-        this.ready = false;
-        $.ajax({
-            url: apiUrl,
-            type: 'POST',
-            data: {
-                'entity' : 'userPreference',
-                'data' : this.data
-            },
-            dataType: 'json',
-            context: this,
-            success: function(response) {
-                this.enable();
-            },
-            error: function(response) {
-                this.enable();
-            }
-        });
+        this.ready = true;
+ //       this.ready = false;
+        // $.ajax({
+        //     url: apiUrl,
+        //     type: 'POST',
+        //     data: {
+        //         'entity' : 'userPreference',
+        //         'data' : this.data
+        //     },
+        //     dataType: 'json',
+        //     context: this,
+        //     success: function(response) {
+        //         this.enable();
+        //     },
+        //     error: function(response) {
+        //         this.enable();
+        //     }
+        // });
     }
     
     enable() {
@@ -62,27 +63,27 @@ class UserPreference {
     }
     
     generateSavedGameFile(game, mapSelection) {
-        $.ajax({
-            url: apiUrl,
-            type: 'POST',
-            data: {
-                'entity' : 'savedGameFile',
-                'userId' : this.data.userId,
-                'mapSelection' : mapSelection
-            },
-            dataType: 'json',
-            context: this,
-            success: function(response) {
-                this.savedGames.push(response.saveFile);
-                this.data.activeGame = response.saveFile;
-                this.data.mapData = response.mapData;
-                this.newGameFileReady = 1;
-            },
-            error: function(response) {
-                console.log(response);
-                console.log('fail');
-            }
-        });
+        // $.ajax({
+        //     url: apiUrl,
+        //     type: 'POST',
+        //     data: {
+        //         'entity' : 'savedGameFile',
+        //         'userId' : this.data.userId,
+        //         'mapSelection' : mapSelection
+        //     },
+        //     dataType: 'json',
+        //     context: this,
+        //     success: function(response) {
+        //         this.savedGames.push(response.saveFile);
+        //         this.data.activeGame = response.saveFile;
+        //         this.data.mapData = response.mapData;
+        //         this.newGameFileReady = 1;
+        //     },
+        //     error: function(response) {
+        //         console.log(response);
+        //         console.log('fail');
+        //     }
+        // });
     }
     
     toggleSound(soundController) {
