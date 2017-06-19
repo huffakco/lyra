@@ -28,11 +28,11 @@ Lyra.Boot.prototype = {
 			this.scale.pageAlighHorizontally = true;
 			this.scale.setScreenSize(true);
 		}
-		this.game.userPreference.load();
+		//this.game.userPreference.load();
 	},
 	update: function() {
-		if (this.game.userPreference.ready == true) {
+		//if (this.game.userPreference.ready == true) {
 			this.state.start('Preload');
-		}
+		//}
 	}
 };
