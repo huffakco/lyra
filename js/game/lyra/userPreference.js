@@ -12,7 +12,7 @@ class UserPreference {
         this.newGameFileReady = 0;
     }
 
-    load() {
+    load(mapSelection) {
 var url = 'api/json/Maps/EASY.json';
 if (mapSelection == 'HARD') {
     url = 'api/json/Maps/HARD.json';
