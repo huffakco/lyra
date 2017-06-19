@@ -13,28 +13,50 @@ class UserPreference {
     }
 
     load() {
-        $.ajax({
-            url: apiUrl,
-            type: 'GET',
-            data: {
-                'entity' : 'userPreference',
-                'userId' : this.data.userId
-            },
-            dataType: 'json',
-            context: this,
-            success: function(response) {
-                this.loadedData = JSON.parse(response);
+var url = 'api/json/Maps/EASY.json';
+if (mapSelection == 'HARD') {
+    url = 'api/json/Maps/HARD.json';
+} 
+$.ajax({
+    type: 'GET',
+  url: url,
+  dataType: "json",
+  success: function(response) {
+                  this.loadedData = JSON.parse(response);
                 if (this.data.languageChoice) {
                     this.loadedData.languageChoice = this.data.languageChoice;
                 }
                 this.data = this.loadedData;
                 this.update();
-            },
+    },
             error: function(response) {
                 console.log(response);
                 //this.update(JSON.parse(response));
             }
-        });
+});
+
+        // $.ajax({
+        //     url: apiUrl,
+        //     type: 'GET',
+        //     data: {
+        //         'entity' : 'userPreference',
+        //         'userId' : this.data.userId
+        //     },
+        //     dataType: 'json',
+        //     context: this,
+        //     success: function(response) {
+        //         this.loadedData = JSON.parse(response);
+        //         if (this.data.languageChoice) {
+        //             this.loadedData.languageChoice = this.data.languageChoice;
+        //         }
+        //         this.data = this.loadedData;
+        //         this.update();
+        //     },
+        //     error: function(response) {
+        //         console.log(response);
+        //         //this.update(JSON.parse(response));
+        //     }
+        // });
     }
 
     update() {
@@ -63,6 +85,8 @@ class UserPreference {
     }
     
     generateSavedGameFile(game, mapSelection) {
+
+
         // $.ajax({
         //     url: apiUrl,
         //     type: 'POST',
@@ -98,24 +122,26 @@ class UserPreference {
     }
     
     getSavedGameFiles(menuState) {
-        $.ajax({
-            url: apiUrl,
-            type: 'GET',
-            data: {
-                'entity' : 'savedGameFiles',
-                'userId' : this.data.userId
-            },
-            dataType: 'json',
-            context: this,
-            success: function(response) {
-                console.log(response);
-                this.savedGameCount = response.savedGameCount;
-                this.savedGames = response.savedGameFiles || [];
-                this.savedGameFilesLoaded = 1;
-            },
-            error: function(response) {
-                console.log('fail');
-            }
-        });
+
+
+        // $.ajax({
+        //     url: apiUrl,
+        //     type: 'GET',
+        //     data: {
+        //         'entity' : 'savedGameFiles',
+        //         'userId' : this.data.userId
+        //     },
+        //     dataType: 'json',
+        //     context: this,
+        //     success: function(response) {
+        //         console.log(response);
+        //         this.savedGameCount = response.savedGameCount;
+        //         this.savedGames = response.savedGameFiles || [];
+        //         this.savedGameFilesLoaded = 1;
+        //     },
+        //     error: function(response) {
+        //         console.log('fail');
+        //     }
+        // });
     }
 }
