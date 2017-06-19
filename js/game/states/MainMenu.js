@@ -79,14 +79,14 @@ Lyra.MainMenu.prototype = {
             self.showMenu('newGame');
         });
         this.menu.newGameEasy.click(function() {
-            self.game.userPreference.generateSavedGameFile(this, 'EASY');
+           // self.game.userPreference.generateSavedGameFile(this, 'EASY');
         });
         this.menu.newGameHard.click(function() {
-            self.game.userPreference.generateSavedGameFile(this, 'HARD');
+            //self.game.userPreference.generateSavedGameFile(this, 'HARD');
         });
         this.menu.loadGameText.click(function() {
-            self.game.userPreference.getSavedGameFiles(this);
-            self.game.userPreference.savedGames.sort(function(a,b) {return(b-a)});
+           // self.game.userPreference.getSavedGameFiles(this);
+           // self.game.userPreference.savedGames.sort(function(a,b) {return(b-a)});
         });
         this.menu.loadGameLeftArrow.click(function() {
             if (self.menu.savedGameList.currentPage > 1) {
@@ -102,21 +102,21 @@ Lyra.MainMenu.prototype = {
                 self.populateLoadMenuText()
             }
         });
-        this.menu.loadGameSlot1.click(function() {
-            self.startSavedGame(self.game.userPreference.savedGames[((self.menu.savedGameList.currentPage - 1) * 5)]);
-        });
-        this.menu.loadGameSlot2.click(function() {
-            self.startSavedGame(self.game.userPreference.savedGames[((self.menu.savedGameList.currentPage - 1) * 5) + 1]);
-        });
-        this.menu.loadGameSlot3.click(function() {
-            self.startSavedGame(self.game.userPreference.savedGames[((self.menu.savedGameList.currentPage - 1) * 5) + 2]);
-        });
-        this.menu.loadGameSlot4.click(function() {
-            self.startSavedGame(self.game.userPreference.savedGames[((self.menu.savedGameList.currentPage - 1) * 5) + 3]);
-        });
-        this.menu.loadGameSlot5.click(function() {
-            self.startSavedGame(self.game.userPreference.savedGames[((self.menu.savedGameList.currentPage - 1) * 5) + 4]);
-        });
+        // this.menu.loadGameSlot1.click(function() {
+        //     self.startSavedGame(self.game.userPreference.savedGames[((self.menu.savedGameList.currentPage - 1) * 5)]);
+        // });
+        // this.menu.loadGameSlot2.click(function() {
+        //     self.startSavedGame(self.game.userPreference.savedGames[((self.menu.savedGameList.currentPage - 1) * 5) + 1]);
+        // });
+        // this.menu.loadGameSlot3.click(function() {
+        //     self.startSavedGame(self.game.userPreference.savedGames[((self.menu.savedGameList.currentPage - 1) * 5) + 2]);
+        // });
+        // this.menu.loadGameSlot4.click(function() {
+        //     self.startSavedGame(self.game.userPreference.savedGames[((self.menu.savedGameList.currentPage - 1) * 5) + 3]);
+        // });
+        // this.menu.loadGameSlot5.click(function() {
+        //     self.startSavedGame(self.game.userPreference.savedGames[((self.menu.savedGameList.currentPage - 1) * 5) + 4]);
+        // });
         this.menu.optionsText.click(function() {
             self.showMenu('options');
         });
@@ -149,10 +149,10 @@ Lyra.MainMenu.prototype = {
         });
     },
     update: function() {
-        if (this.game.userPreference.savedGameFilesLoaded) {
-            this.game.userPreference.savedGameFilesLoaded = 0;
-            this.populateLoadMenuText();
-        }
+        // if (this.game.userPreference.savedGameFilesLoaded) {
+        //     this.game.userPreference.savedGameFilesLoaded = 0;
+        //     this.populateLoadMenuText();
+        // }
         if (this.game.userPreference.newGameFileReady) {
             this.game.userPreference.newGameFileReady = 0;
             this.launchGame(this.game.userPreference.data.mapData);
@@ -213,7 +213,7 @@ Lyra.MainMenu.prototype = {
         this.menu.loadGameSlot4.html('');
         this.menu.loadGameSlot5.css('visibility', 'hidden');
         this.menu.loadGameSlot5.html('');
-        if (this.game.userPreference.savedGameCount === "0") {
+       // if (this.game.userPreference.savedGameCount === "0") {
             this.menu.loadGameSlot1.html('none');
             this.menu.loadGameSlot2.html('none');
             this.menu.loadGameSlot2.css('visibility', 'hidden');
@@ -223,35 +223,35 @@ Lyra.MainMenu.prototype = {
             this.menu.loadGameSlot4.css('visibility', 'hidden');
             this.menu.loadGameSlot5.html('none');
             this.menu.loadGameSlot5.css('visibility', 'hidden');
-        } else if (this.menu.savedGameList.pageCount === this.menu.savedGameList.currentPage &&
-                   this.menu.savedGameList.partialLastPage) {
-            // display partial last page
-            var startingIndex = (this.menu.savedGameList.currentPage * 5) - 5;
-            var endingIndex = ((this.menu.savedGameList.currentPage * 5) - 5) + this.menu.savedGameList.partialLastPage;
-            var slotNumber = 1;
-            for (var i = startingIndex; i < endingIndex; i++) {
-                this.menu['loadGameSlot' + slotNumber].html(this.game.userPreference.savedGames[i].replace(/.json/, '').slice(7, 25))
-                                                      .css('visibility', 'visible');
-                slotNumber++;
-            }
-            while (slotNumber < 6) {
-                this.menu['loadGameSlot' + slotNumber].css('visibility', 'hidden');
-                slotNumber++;
-            }
-        } else {
-            // display current full page
-            var startingIndex = (this.menu.savedGameList.currentPage * 5) - 5;
-            this.menu.loadGameSlot1.html(this.game.userPreference.savedGames[startingIndex].replace(/.json/, '').slice(7, 25))
-                                   .css('visibility', 'visible');
-            this.menu.loadGameSlot2.html(this.game.userPreference.savedGames[startingIndex + 1].replace(/.json/, '').slice(7, 25))
-                                   .css('visibility', 'visible');
-            this.menu.loadGameSlot3.html(this.game.userPreference.savedGames[startingIndex + 2].replace(/.json/, '').slice(7, 25))
-                                   .css('visibility', 'visible');
-            this.menu.loadGameSlot4.html(this.game.userPreference.savedGames[startingIndex + 3].replace(/.json/, '').slice(7, 25))
-                                   .css('visibility', 'visible');
-            this.menu.loadGameSlot5.html(this.game.userPreference.savedGames[startingIndex + 4].replace(/.json/, '').slice(7, 25))
-                                   .css('visibility', 'visible');
-        }
+        // } else if (this.menu.savedGameList.pageCount === this.menu.savedGameList.currentPage &&
+        //            this.menu.savedGameList.partialLastPage) {
+        //     // display partial last page
+        //     var startingIndex = (this.menu.savedGameList.currentPage * 5) - 5;
+        //     var endingIndex = ((this.menu.savedGameList.currentPage * 5) - 5) + this.menu.savedGameList.partialLastPage;
+        //     var slotNumber = 1;
+        //     for (var i = startingIndex; i < endingIndex; i++) {
+        //         this.menu['loadGameSlot' + slotNumber].html(this.game.userPreference.savedGames[i].replace(/.json/, '').slice(7, 25))
+        //                                               .css('visibility', 'visible');
+        //         slotNumber++;
+        //     }
+        //     while (slotNumber < 6) {
+        //         this.menu['loadGameSlot' + slotNumber].css('visibility', 'hidden');
+        //         slotNumber++;
+        //     }
+        // } else {
+        //     // display current full page
+        //     var startingIndex = (this.menu.savedGameList.currentPage * 5) - 5;
+        //     this.menu.loadGameSlot1.html(this.game.userPreference.savedGames[startingIndex].replace(/.json/, '').slice(7, 25))
+        //                            .css('visibility', 'visible');
+        //     this.menu.loadGameSlot2.html(this.game.userPreference.savedGames[startingIndex + 1].replace(/.json/, '').slice(7, 25))
+        //                            .css('visibility', 'visible');
+        //     this.menu.loadGameSlot3.html(this.game.userPreference.savedGames[startingIndex + 2].replace(/.json/, '').slice(7, 25))
+        //                            .css('visibility', 'visible');
+        //     this.menu.loadGameSlot4.html(this.game.userPreference.savedGames[startingIndex + 3].replace(/.json/, '').slice(7, 25))
+        //                            .css('visibility', 'visible');
+        //     this.menu.loadGameSlot5.html(this.game.userPreference.savedGames[startingIndex + 4].replace(/.json/, '').slice(7, 25))
+        //                            .css('visibility', 'visible');
+        // }
         this.showMenu('loadGame');
     },
     setLanguage: function(choice) {
