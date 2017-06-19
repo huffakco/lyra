@@ -79,9 +79,11 @@ Lyra.MainMenu.prototype = {
             self.showMenu('newGame');
         });
         this.menu.newGameEasy.click(function() {
+            this.game.userPreference.load('EASY');
            // self.game.userPreference.generateSavedGameFile(this, 'EASY');
         });
         this.menu.newGameHard.click(function() {
+            this.game.userPreference.load('HARD');
             //self.game.userPreference.generateSavedGameFile(this, 'HARD');
         });
         this.menu.loadGameText.click(function() {
