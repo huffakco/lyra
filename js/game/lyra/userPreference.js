@@ -86,6 +86,34 @@ $.ajax({
     
     generateSavedGameFile(game, mapSelection) {
 
+// added for languages.json loaded without server call
+
+var url = 'api/json/Maps/EASY.json';
+
+if (mapSelection == "HARD") {
+    var url = 'api/json/Maps/HARD.json';
+}
+
+$.ajax({
+  type: 'GET',
+  url: url,
+  dataType: "json",
+  success: function(response) {
+    this.savedGames.push("temp.json");
+    this.data.activeGame = "temp.json";
+    var iterator = Object.keys(response);
+    for (var i=0; i< iterator.length; i++) {
+        if (!(iterator[i] == "language" || iterator[i] == "languageCodes")) {
+            //jsonLanguage.push(iterator[i]);
+            this.data.mapData[iterator[i]] = response[iterator[i]];
+        // $.each(response[iterator[i]], function(item) {
+        //   jsonLanguage.push(item);
+        // });
+        }      
+    }
+    this.newGameFileReady = 1;
+  }
+});
 
         // $.ajax({
         //     url: apiUrl,
